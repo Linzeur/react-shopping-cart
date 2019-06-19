@@ -1,5 +1,5 @@
 import React from "react";
-import ShoppingCart from "../views/shopping-cart";
+import ShoppingCart from "./shopping-cart";
 
 function Header({ title, qx }) {
   return (

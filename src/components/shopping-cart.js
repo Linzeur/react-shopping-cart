@@ -1,6 +1,6 @@
 import React from "react";
 
-function ShoppingCart(qArticles) {
+function ShoppingCart({ qArticles }) {
   return (
     <>
       <img src="http://www.google.com" alt="shopping-cart" />

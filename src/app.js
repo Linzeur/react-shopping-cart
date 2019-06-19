@@ -2,7 +2,7 @@
 import React from "react";
 import { jsx, Global } from "@emotion/core";
 // import CartView from './views/cart';
-import ProductList from "./views/product-list";
+import Header from "./components/header";
 
 function App() {
   return (
@@ -18,7 +18,7 @@ function App() {
         }}
       />
       {/* <CartView /> */}
-      <ProductList />
+      <Header />
     </>
   );
 }
