@@ -11,19 +11,21 @@ function Cart() {
       {list.length === 0 ? (
         emptyMessage
       ) : (
-        <ul>
-          <li />
-          {list.map(article => {
-            finalTotal += article.price * article.quantity;
-            return <CartItem />;
-          })}
-        </ul>
+        <>
+          <ul>
+            <li />
+            {list.map(article => {
+              finalTotal += article.price * article.quantity;
+              return <CartItem />;
+            })}
+          </ul>
+          <hr />
+          <section>
+            <span>Total amount:</span>
+            <span>{finalTotal}</span>
+          </section>
+        </>
       )}
-      <hr />
-      <section>
-        <span>Total amount:</span>
-        <span>{finalTotal}</span>
-      </section>
     </div>
   );
 }

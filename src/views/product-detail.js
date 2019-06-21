@@ -2,8 +2,11 @@
 import React from "react";
 import { jsx } from "@emotion/core";
 import image from "../data/image.jpg";
+import { listProduct } from "../data/product-fake";
 
-function ProductDetail({ product }) {
+function ProductDetail({ id }) {
+  const product = listProduct.find(p => p.id === +id);
+
   const container = {
     display: "flex"
   };
@@ -11,7 +14,7 @@ function ProductDetail({ product }) {
   return (
     <>
       <div css={container}>
-        <img src={image} alt="Image" />
+        <img src={image} alt="Product" />
         <div>
           <h3>Name: {product.name}</h3>
           <h3>Brand: {product.brand}</h3>
